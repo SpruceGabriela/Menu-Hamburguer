@@ -4,6 +4,7 @@ body {
   background-image: url("https://static1.squarespace.com/static/5693309f2399a31801736f01/t/56ca2a9520c647f079d5f63a/1456089750256/maxim6.jpg?");
   background-size: cover;
   background-repeat: no-repeat;
+  height: -webkit-fill-available;
 }
 
 header{
@@ -48,6 +49,7 @@ header nav ul li{
   width: 120px;
   text-align: center;
   color: white;
+  font-family: cursive;
   text-decoration: none;
   display: block;
 }
