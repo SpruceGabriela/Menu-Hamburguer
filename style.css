@@ -1,0 +1,188 @@
+body {
+  margin:0;
+  padding:0;
+  background-image: url("https://static1.squarespace.com/static/5693309f2399a31801736f01/t/56ca2a9520c647f079d5f63a/1456089750256/maxim6.jpg?");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header{
+  position: fixed;
+  padding: 0 100px;
+  background-color: black;
+  width:100%;
+  box-sizing: border-box;
+}
+
+header .logo{
+  color:white;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30pt;
+  float: left;
+  font-weight: bold;
+  font-family: cursive;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.ponto {
+  margin-left: 3px;
+  color: red;
+  font-size: 30pt;
+}
+
+header nav{
+  float: right;
+}
+header nav ul{
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+header nav ul li{
+  height: 50px;
+  line-height: 50px;
+  width: 120px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+header nav ul li:hover{
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+header nav ul li ul{
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  margin-left: 120px;
+  margin-top: -50px;
+}
+
+header nav ul li:hover ul{
+  display: flex;
+  cursor: pointer;
+}
+
+header nav ul li ul li{
+  margin:0;
+  display:inline-block;
+  text-align: left;
+  flex-direction: column;
+  color:white;
+  
+  background-color: gray;
+}
+
+.menu{
+  width: 40px;
+  height: 40px;
+  float: right;
+  line-height: 50px;
+  cursor:pointer;
+  display: none;
+  align-items: center;
+}
+
+.t1{
+  position: absolute;
+  height: 5px;
+  width: 30px;
+  background-color: white;
+  border-radius: 10px;
+  transition: all ease 0.3s;
+}
+
+.t2{
+  position: absolute;
+  height: 5px;
+  width: 30px;
+  background-color: white;
+  border-radius: 10px;
+  transition: all ease 0.3s;
+}
+
+.t3{
+  position: absolute;
+  height: 5px;
+  width: 30px;
+  background-color: white;
+  border-radius: 10px;
+  
+}
+
+.t1{
+  top:12px;
+}
+
+.t2{
+  top:23.4px;
+}
+
+.t3{
+  top:34px;
+}
+
+@media (max-width:621px){
+  body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background-image: url("https://static1.squarespace.com/static/5693309f2399a31801736f01/t/56ca2a9520c647f079d5f63a/1456089750256/maxim6.jpg?");
+  }
+  
+  header{
+    position: fixed;
+    padding: 0 20px;
+  }
+  
+  .menu{
+    display:block;
+    
+  }
+  
+  header nav{
+    position: absolute;
+    width: 100%;
+    height: 100;
+    background-color: black;
+    top: 50px;
+    transform: translateY(-400vw);
+    transition: 0.5s;
+    z-index: -5;
+    left:0;
+  }
+  
+  header nav ul{
+    display: block;
+    text-align: center;
+  }
+  
+  header nav ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, .2)
+  }
+  
+  .abrirMenu{
+    transform: translateY(0);
+    transition: 0.5s;
+    z-index: 5;
+  }
+  
+  .abrirMenu .t1 {
+    transform: rotate(45deg);
+    top:49%;
+    transition: 0.5s;
+  }
+  
+  .abrirMenu .t2, .abrirMenu .t3 {
+    transform: rotate(-45deg);
+    top:49%;
+    transition: 0.5s;
+  }
+}
